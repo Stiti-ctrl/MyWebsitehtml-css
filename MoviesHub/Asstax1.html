@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Movies Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            background-color: #444;
+            color: white;
+        }
+        .header img, .footer img {
+            height: 40px;
+        }
+        .header h1, .footer p {
+            margin: 0;
+        }
+        .main {
+            text-align: center;
+            margin: 20px 0;
+            padding: 20px;
+            background-image: url('background.jpg');
+            background-size: cover;
+            color: white;
+            position: relative;
+        }
+        .main::after {
+            content: "";
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+        .main h2, .main div {
+            position: relative;
+            z-index: 2;
+        }
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+            padding: 20px;
+        }
+        .content div {
+            width: 45%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+        .video {
+            margin: 20px 0;
+            text-align: center;
+        }
+        .form-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
+        form {
+            width: 100%;
+            max-width: 500px;
+            margin: 0 auto;
+            border: 1px solid #ccc;
+            padding: 20px;
+            box-sizing: border-box;
+            background-color: #f9f9f9;
+        }
+        form div {
+            margin-bottom: 10px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form select {
+            width: 100%;
+            padding: 8px;
+            box-sizing: border-box;
+        }
+        form input[type="submit"] {
+            width: auto;
+            background-color: #444;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="mh.jpeg" alt="Logo">
+        <h1>Movies Hub</h1>
+        <div>Contact</div>
+    </div>
+
+    <div class="main">
+        <h2>WELCOME TO MOVIES HUB</h2>
+        <div>Experience the best of movies and entertainment</div>
+    </div>
+
+    <div class="content">
+        <div>
+            <h3>Latest News</h3>
+            <p>Stay updated with the latest news in the world of movies and entertainment. Catch up on the latest releases, reviews, and behind-the-scenes stories.</p>
+        </div>
+        <div>
+            <img src="rrr.webp" alt="Movie Image" style="width:100%">
+        </div>
+        <div>
+            <img src="avatar.jpeg" alt="Movie Image" style="width:100%">
+        </div>
+        <div>
+            <h3>Top Movies</h3>
+            <p>Explore the top-rated movies of the year. Find out what makes these movies the best in their genre and why you should watch them.</p>
+        </div>
+    </div>
+
+    <div class="video">
+        <h2>Featured Video</h2>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/o53_QeLn4i8" title="RRR full movie HD in hindi Dubbed.   #Ramcharan #Aliabhatt #junierNTR" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="form-container">
+        <form>
+            <div>
+                <label for="name">NAME:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div>
+                <label for="email">EMAIL:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div>
+                <label for="genre">FAVOURITE GENRE:</label>
+                <select id="genre" name="genre" required>
+                    <option value="action">Action</option>
+                    <option value="comedy">Comedy</option>
+                    <option value="drama">Drama</option>
+                    <option value="fantasy">Fantasy</option>
+                    <option value="horror">Horror</option>
+                    <option value="mystery">Mystery</option>
+                    <option value="romance">Romance</option>
+                    <option value="thriller">Thriller</option>
+                </select>
+            </div>
+            <div>
+                <label for="subscribe">Subscribe to our newsletter via email:</label>
+                <input type="checkbox" id="subscribe" name="subscribe">
+            </div>
+            <div>
+                <input type="submit" value="SUBMIT">
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>FOOTER TEXT IN SMALL. ALL RIGHTS RESERVED</p>
+    </div>
+</body>
+</html>
